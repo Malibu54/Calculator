@@ -1,7 +1,6 @@
 # Calculator
 
 This is a simple calculator web application built with HTML, CSS, and JavaScript. It allows users to perform basic arithmetic calculations such as addition, subtraction, multiplication, and division. <br>
-Deploy 👉 https://malibucalculator.netlify.app/ 
 ![Calculator Screenshot](beautifulCalculator.png)
 
 ## Features
@@ -14,7 +13,7 @@ Deploy 👉 https://malibucalculator.netlify.app/
 
 ## Demo
 
-You can try out the calculator by visiting the [live demo](https://your-demo-link.com).
+You can try out the calculator by visiting the [live demo](https://malibucalculator.netlify.app/).
 
 ## Getting Started
 
