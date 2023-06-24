@@ -1,5 +1,5 @@
 # Calculator
-[![Netlify Status](https://api.netlify.com/api/v1/badges/13cbadd0-a5b3-490b-823f-3431fd4c7902/deploy-status)](https://app.netlify.com/sites/malibucalculator/deploys)<br>
+
 This is a simple calculator web application built with HTML, CSS, and JavaScript. It allows users to perform basic arithmetic calculations such as addition, subtraction, multiplication, and division. <br>
 Deploy 👉 https://malibucalculator.netlify.app/ 
 ![Calculator Screenshot](beautifulCalculator.png)
