@@ -6,15 +6,15 @@ const screen = document.querySelector('.screen');
 
 function buttonClick(value){
     if(isNaN(value)){
-        handleSymbol(value)
+        handleSymbol(value);
     }else{
         handleNumber(value);
     }
     screen.innerText = buffer;
 }
 
-function handleSymbol(symbol){
-    switch(symbol){
+function handleSymbol(value){
+    switch(value){
         case "C":
             buffer = "0";
             runningTotal = 0;
@@ -29,10 +29,10 @@ function handleSymbol(symbol){
             runningTotal = 0;
             break;
         case "←":
-            if(buffer.lengh ===1){
+            if(buffer.length ===1){
                 buffer ="0";
             }else{
-                buffer = buffer.toString(0, buffer.lengh -1);
+                buffer = buffer.substring(0, buffer.length -1);
             } 
             break;
         case "+":
@@ -60,13 +60,13 @@ function handleMatch(symbol){
 }
 
 function flushOperation(intBuffer){
-    if(previousOperator === "+"){
+    if(previousOperator === "&plus"){
         runningTotal += intBuffer;
-    }else if (previousOperator ==="−"){
+    }else if (previousOperator ==="&minus"){
         runningTotal -= intBuffer;
-    }else if(previousOperator ==="×"){
+    }else if(previousOperator ==="&times"){
         runningTotal *= intBuffer;
-    }else if(previousOperator === "÷"){
+    }else if(previousOperator === "&div"){
         runningTotal /= intBuffer;
     }
 }
@@ -81,7 +81,7 @@ function handleNumber(numberString){
 
 function init(){
     document.querySelector(".calc-buttons").
-    addEventListener("clic", function(event){
+    addEventListener("click", function(event){
         buttonClick(event.target.innerText);
     })
 }
